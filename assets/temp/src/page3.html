@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <link href="/dist/output.css" rel="stylesheet"> -->
+    <title>Page 3</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Epilogue&display=swap');
+        .cfont{
+            font-family: 'Epilogue', sans-serif;
+        }
+    </style>
+    <style>
+        /* width */
+        ::-webkit-scrollbar {
+          width: 9px;
+        }
+        
+        /* Track */
+        ::-webkit-scrollbar-track {
+          box-shadow: inset 0 0 5px grey; 
+          border-radius: 10px;
+        }
+         
+        /* Handle */
+        ::-webkit-scrollbar-thumb {
+          background: #EF6D58; 
+          border-radius: 10px;
+        }
+        
+        /* Handle on hover */
+        ::-webkit-scrollbar-thumb:hover {
+          background: #EF6D58; 
+        }
+        </style>
+
+    
+</head>
+<body>
+    <div class="h-screen relative w-full bg-[#28293E]">
+        <div class=" flex justify-between py-4 px-5 bg-[#28293E] ">
+            <div class="flex items-center ">
+                <img class=" w-10 h-10 align-bottom" src="./assets/logo.svg" alt="">
+                <div class="cfont ml-1 mt-1 text-[20px] text-white font-extrabold">HEAT TRANSFER <snap class="text-[#EF6D58]">ANALYSIS</snap></div>
+            </div>
+            <button class="text-[14px] mr-16 border cfont font-bold text-white p-3 rounded-md h-[45px] w-[150px]">History</button>
+        </div>
+        
+        <div class="flex  items-center justify-start">
+            <div class="px-11 py-1 flex">
+                <a class="cfont text-white font-extrabold text-[56px]" href="http://">Conduction</a>        
+            </div>
+            <div class="px-3  bg-white  flex rounded-xl">
+            <a class="cfont font-extrabold " href="http://">Slabs</a>
+            </div>
+        </div>
+
+        <div class=" px-11 py-5">
+            <div class="text-[35px] cfont font-bold text-white" >Enter Comma -’,’ seperated values :</div>
+        </div>
+        
+        <div class="px-11 py-5 cfont text-white">
+            <div class="flex justify-evenly bg-pink-500 p-1">
+                <div class="text-[35px] font-bold">1. No.of Walls :</div>
+                <input class="bg-[#EF6D58] rounded-md" type="text bg" name="" id="">
+            </div>
+            <div class="flex">
+                <div class="text-[35px] font-bold">2. Area of cross-section :</div>
+                <input class="bg-[#EF6D58] rounded-md" type="text" name="" id="">
+            </div>
+            <div class="flex">
+                <div class="text-[35px] font-bold">3. Walls are in :</div>
+                <input class="bg-[#EF6D58] rounded-md" type="text" name="" id="">
+            </div>
+            <div class="flex">
+                <div class="text-[35px] font-bold">4. Ambient Conditions :</div>
+                <input class="bg-[#EF6D58] rounded-md" type="text" name="" id="">
+            </div>
+            <div class="flex">
+                <div class="text-[35px] font-bold">3. Walls are in :</div>
+                <input class="bg-[#EF6D58] rounded-md" type="text" name="" id="">
+            </div>
+        </div>
+        
+        <div class=" py-11 px-10 absolute flex inset-x-0 bottom-0 w-full">
+            <div onclick="window.location='page1.html'" class="border rounded-xl  bg-white w-11 h-11 justify-center flex">
+                <i class="fa-solid fa-house text-3xl"></i>
+              </div>
+        </div>    
+    </div>
+    
+</body>
+</html>

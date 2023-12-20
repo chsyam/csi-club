@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./assets/css/sidebar.css">
+    <title>Document</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins& display=swap');
+        .csifont {
+            font-family: 'Inter', sans-serif;
+        }
+        .afont {
+            font-family: 'Poppins', sans-serif;
+        }
+        .card{
+            box-shadow: 0 15px 45px -20px rgb(0 0 0 / 73%);
+            border-radius: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="sidebar" class="z-10 mt-[51px] rounded-r-md">
+        <ul class="fixed top-[40px] drop-shadow-lg h-screen bg-white pl-5 w-[300px] border border-black rounded-rb-md py-3 my-10">
+            <li class="text-xl csifont my-5 p-1 rounded m-1 w-[200px] border border-white hover:bg-gray-400 hover:border hover:border-gray-300"><i class="fa fa-home"></i><a href="/"> Home </a> </li>
+            <li class="text-xl csifont my-5 p-1 rounded m-1 w-[200px] border border-white hover:bg-gray-300 hover:border hover:border-gray-300"><i class="ri-information-line"></i><a href="index.html#about"> About</a></li>
+            <li class="text-xl csifont my-5 p-1 rounded m-1 w-[200px] border border-white hover:bg-gray-300 hover:border hover:border-gray-300"><i class="fa fa-calendar"></i> <a href="index.html#events"> Events</a></li>
+            <li class="text-xl csifont my-5 p-1 rounded m-1 w-[200px] border border-white hover:bg-gray-300 hover:border hover:border-gray-300"><i class="fa fa-users"></i> <a href="team.html"> Team</a></li>
+            <li class="text-xl csifont my-5 p-1 rounded m-1 w-[200px] border bg-gray-400  border-white hover:bg-gray-300 hover:border hover:border-gray-300"><i class="fa fa-photo"></i> <a href="gallery.html"> Gallery</a></li>
+        </ul>
+    </div> 
+    <div class="fixed top-0 drop-shadow-2xl z-10 w-full ribbon bg-white h-[80px] flex justify-between px-10">
+        <div class="flex">
+            <div class="px-5 text-4xl pt-5">
+                <i id="sidebar-btn" class="cursor-pointer fa fa-bars"></i>
+            </div>
+            <div class="logo">
+                <img src="./assets/images/logo.png" class="rounded-full h-[70px] px-3 pt-2" alt="">
+            </div>
+            <div class="head px-5 text-[30px] py-[15px] csifont">
+                Computer Society of India
+            </div>
+        </div>
+        <div class="logo">
+            <img src="./assets/images/ribbion.svg" width="140" height="140" class="px-3 pt-1" alt="">
+        </div>
+    </div>
+    <div class="gallery text-3xl csifont m-[100px]">
+        <h1 class="text-center">Gallery</h1>
+        <div class="pictures flex justify-center align-items-center mt-10">
+            <img class="rounded-xl h-[500px]" src="./assets/images/event-3.jpg" alt="">
+        </div>
+        
+    </div>
+    <div class="footer flex bg-black justify-between text-white mt-10">
+        <div class="contact w-2/12 text-end ml-[50px] mb-[100px] text-2xl -rotate-90">
+            <span class="border-l border-white opacity-50 p-2">ContactUs </span>
+        </div>
+        <div class="csi_page m-1">
+            <div class="mr-[25%] ml-[15%] text-center">
+                <div class="text-3xl m-2">
+                    Computer Society Of India
+                </div>
+                <div class="text-2xl mt-5 opacity-75">
+                    Our Mission
+                </div>
+                <div class="m-2 opacity-75">Over the think of IT Professionals and computer users CSI effort in making the profession as an area of choice amongst all the sections of society. The Society also encourages and assists professionals to maintain integrity and competence of the profession and fosters a sense of partnership amongst members. Promoting information Technology as a profession is a top most prior for CSI today. The main objective of CSI is to organize conferences, conventions, lectures, projects, and awards. At the same time, it also ensures that regular training and skill updating are organized for IT professionals.
+                </div>
+                <div class="social flex justify-center">
+                    <div class="icon px-5 py-2">
+                        <i class="cursor-pointer border rounded-full p-2 border-white fa fa-envelope"></i>
+                    </div>
+                    <div class="icon px-5 py-2">
+                        <i class="cursor-pointer border rounded-full p-2 border-white fa fa-linkedin"></i>
+                    </div>
+                    <div class="icon px-5 py-2">
+                        <i class="cursor-pointer border rounded-full p-2 border-white fa fa-twitter"></i>
+                    </div>
+                    <div class="icon px-5 py-2">
+                        <i class="cursor-pointer border rounded-full p-2 border-white fa fa-instagram"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    $(document).ready(function() {
+        $('#sidebar-btn').on('click', function () {
+            $('#sidebar').toggleClass('visible');
+            $('.gallery').toggleClass('opacity-30');
+             $('.footer').toggleClass('opacity-30');
+        });
+    });
+</script>
+</html>

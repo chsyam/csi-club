@@ -1,0 +1,51 @@
+.slider .owl-item.active.center .slider-card {
+  transform: scale(1.01);
+  position: relative;
+  opacity: 1;
+  z-index: 1;
+  background: #005260;
+  background: -webkit-linear-gradient(to bottom, #005260, #005260);
+  background: linear-gradient(to bottom, #005260, #005260);
+}
+
+@media only screen and (max-width:500px) {
+  .slider .owl-item.active.center .slider-card {
+    transform: scale(1.03);
+    position: relative;
+    opacity: 1;
+    background: #ffffff;
+    background: -webkit-linear-gradient(to bottom, #ffffff, #ffffff);
+    background: linear-gradient(to bottom, #ffffff, #ffffff);
+    z-index: 1;
+    color: rgb(0, 0, 0);
+  }
+}
+.slider-card {
+  background: #fff;
+  margin: 10px 10px 50px 10px;
+  border-radius: 10px;
+  box-shadow: 0 15px 45px -20px rgb(0 0 0 / 73%);
+  transform: scale(0.6);
+  opacity: 0.9;
+  transition: all 0.3s;
+  z-index: 1;
+}
+.slider-card img {
+  border-radius: 10px 10px 0px 0px;
+}
+.owl-nav .owl-prev {
+  position: absolute;
+  top: calc(50% - 25px);
+  left: 0;
+  opacity: 1;
+  font-size: 30px !important;
+  z-index: 1;
+}
+.owl-nav .owl-next {
+  position: absolute;
+  top: calc(50% - 25px);
+  right: 0;
+  opacity: 1;
+  font-size: 30px !important;
+  z-index: 1;
+}
