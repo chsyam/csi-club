@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -14,20 +15,23 @@
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"></script>
     <script src="./assets/carousel/js/owl.carousel.min.js"></script>
     <script src="./assets/carousel/js/script.js"></script>
     <style>
-        .butt{
+        .butt {
             left: 45%;
             top: 48%;
             position: absolute;
         }
+
         @import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins& display=swap');
+
         .csifont {
             font-family: 'Inter', sans-serif;
         }
+
         .afont {
             font-family: 'Poppins', sans-serif;
         }
@@ -36,23 +40,25 @@
             display: flex;
             align-items: center;
             font-size: 2rem;
-            font-weight: 600; 
-            }
+            font-weight: 600;
+        }
 
         .scrolling-words-box {
             height: 3rem;
             margin: auto;
             overflow: hidden;
+
             ul {
                 margin: 0 0.625rem;
                 padding: 0;
                 animation: scrollUp 4s infinite;
+
                 li {
-                display: flex;
-                align-items: center;
-                justify-content: flex-end;
-                height: 3rem;
-                list-style: none; 
+                    display: flex;
+                    align-items: center;
+                    justify-content: flex-end;
+                    height: 3rem;
+                    list-style: none;
                 }
             }
         }
@@ -60,17 +66,19 @@
         $item-count: 5;
 
         @keyframes scrollUp {
-        @for $i from 1 through ($item-count - 1) {
-            #{($i * 25) - 10%}, #{$i * 25%} {
-            transform: translateY((-100% / $item-count) * $i);
+            @for $i from 1 through ($item-count - 1) {
+
+                #{($i * 25) - 10%},
+                #{$i * 25%} {
+                    transform: translateY((-100% / $item-count) * $i);
+                }
             }
         }
-        }
-</style>
+    </style>
 </head>
 
 <body class="bg-[#005260] csifont h-screen flex-col">
-    <div class="curtain top-0 z-10">
+    <!-- <div class="curtain top-0 z-10">
         <div class="rxWorld">
             <section class="rnOuter ">
                 <section class="aoTable">
@@ -295,29 +303,38 @@
             </section>
             <div class='rnInner'>
                 <div class='rnUnit'></div><!--
-                --><div class='rnUnit'></div><!--
-                --><div class='rnUnit'></div><!--
-                --><div class='rnUnit'></div><!--
-                --><div class='rnUnit'></div><!--
-                --><div class='rnUnit'></div><!--
-                --><div class='rnUnit'></div><!--
-                --><div class='rnUnit'></div><!--
-                --><div class='rnUnit'></div><!--
-                --><div class='rnUnit'></div><!--
                 -->
-            </div>
-            </section>
-            <div class="butt bg-white p-2 hover:bg-green-500 hover:text-white rounded text-5xl font-mono">
-                    <button id="launch">Launch</button>
-            </div>
-        </div>
+    <div class='rnUnit'></div><!--
+                -->
+    <div class='rnUnit'></div><!--
+                -->
+    <div class='rnUnit'></div><!--
+                -->
+    <div class='rnUnit'></div><!--
+                -->
+    <div class='rnUnit'></div><!--
+                -->
+    <div class='rnUnit'></div><!--
+                -->
+    <div class='rnUnit'></div><!--
+                -->
+    <div class='rnUnit'></div><!--
+                -->
+    <div class='rnUnit'></div><!--
+                -->
     </div>
-    
+    </section>
+    <div class="butt bg-white p-2 hover:bg-green-500 hover:text-white rounded text-5xl font-mono">
+        <button id="launch">Launch</button>
+    </div>
+    </div>
+    </div> -->
+
 </body>
 <script src="assets/scroll/js/marquee.js"></script>
 <script>
-    $(document).ready(function() {
-        
+    $(document).ready(function () {
+
         $('#sidebar-btn').on('click', function () {
             $('#sidebar').toggleClass('visible');
             $('#members').toggleClass('opacity-5');
@@ -325,17 +342,18 @@
     });
 </script>
 <script>
-    $(document).ready(function(){
+    $(document).ready(function () {
         // $('.main').hide();
-		$('#launch').click(function(){
-			$('.rnInner').css({"transform-origin": "-120% top","transform": "scaleX(0)"});
-            
-			$('.butt').hide();
+        $('#launch').click(function () {
+            $('.rnInner').css({ "transform-origin": "-120% top", "transform": "scaleX(0)" });
+
+            $('.butt').hide();
             $('rnUnit').removeClass();
             $('ruOuter').removeClass();
 
-			$('.main').addClass('bg-[#005260]');
-		})
-	});
+            $('.main').addClass('bg-[#005260]');
+        })
+    });
 </script>
+
 </html>
